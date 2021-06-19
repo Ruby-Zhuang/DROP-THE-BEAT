@@ -1,62 +1,82 @@
 # DROP THE BEAT
 
-DROP THE BEAT is a simple but competitive live multiplayer “name that song” game. Two players can join host's chat room and guess the songs' title simultaneously.
+DROP THE BEAT is a fun & competitive live multiplayer “name that song” game. Two players can join a host's game room and guess the song titles in a selected playlist simultaneously by listening to short clips of the tunes.
 
-Deployed version: https://drop-the-beat.netlify.app/
+While incorporating complex game logic behind the scenes, the design was strategically simple and clean to enhance the UX/UI.
 
-# Final Product
+This app was created as part of the final project for Lighthouse Labs (Web Development Bootcamp). The goal was to create a full-stack application from start to finish (including project planning and a 5 minute demo) in just two weeks.
 
-## Host Features
+Check out the 👉 [deployed website here!](https://drop-the-beat.netlify.app/) 👈
+
+## Motivation
+
+The motivation behind this app is two-fold. Firstly, simple online games (i.e. [Scribbl IO](https://skribbl.io/), [Among Us](https://store.steampowered.com/app/945360/Among_Us/), [Codenames](https://codenames.game/) and [Kahoot!](https://kahoot.com/)) have a way to bring people together through small moments of joy - which is much needed during these times. Secondly, we love music - music is the universal language! We combined these two ideas to create a fun game that any group of people can play together and jam to.
+
+## Final Product
+
+### Host Features
 
 Host can select a playlist of songs for players to guess
-![Host selects playlist]()
+![Host selects playlist](https://github.com/Ruby-Zhuang/DROP-THE-BEAT/blob/main/docs/host.gif?raw=true)
 
-## Player Features
+### Player Features
 
 Players can enter the game lobby and change their name upon arrival
-![Players enter game]()
+![Players enter game](https://github.com/Ruby-Zhuang/DROP-THE-BEAT/blob/main/docs/player.gif?raw=true)
 
 Players can chat and guess the song title (short audio clip of songs plays each round)
-![Winner]()
+![Winner](https://github.com/Ruby-Zhuang/DROP-THE-BEAT/blob/main/docs/winner.gif?raw=true)
 
-# Features
+## Functional Behaviour/Features
 
 Host can:
 
-- select a playlist;
-- invite players to guess the songs in that playlist just by listening to a short clip of the tunes;
-- control the gameflow by clicking "next song" at any moment;
-- cheer up players or give them hints in the live chat.
+- Select a playlist
+- Invite players to guess the songs in that playlist just by listening to a short clip of the tunes
+- Control the gameflow by clicking "next song" at any moment
+- Cheer on players or give them hints in the live chat
 
 Players can:
 
-- change their name upon arrival;
-- compete with other players by typing the correct song title (case insensitive) in the live chat;
-- get a score for the correct answer and see it live updated on the top of the chat board.
+- Change their name upon arrival into the game lobby
+- Compete with other players by typing the correct song title (case insensitive) in the live chat
+- Get a point if they are the first to correctly guess the song
 
-The song album cover reveals as soon as it's guessed or when the time runs out (30 seconds default).
-When the playlist runs out of songs, the result page reveals and congratulates the winner.
+Game Features:
 
-# Tech Stack
+- Song details (title, artist, album photo) are revealed each round as soon as the title is guessed or when the time runs out (30 seconds default)
+- Song details are available upon hover if they have been previously played
+- Scoreboard updates dynamically upon a correct guess from a player
+- When the playlist runs out of songs, the winner is calculated and revealed
 
-`PERN STACK`
+## Tech Stack
 
-- Database: PostgreSQL
-- Client Side: React
-- Server Side: NodeJS & Express
-- Live Chat: Socket.io
-- Styles: Material UI
-- HTTP Request tool: Axios
-- State Management tool: ContextAPI
+- **Foundations**: PERN Stack
+- **Client**: React, Axios
+- **Server**: NodeJS, Express
+- **Database**: PostgreSQL
+- **Real-Time Communication**: Socket IO
+- **Design/Styling**: Material UI, SASS
+- **APIs**: Spotify API
 
-# Usage
+## Setup
 
-Install dependencies with `npm install`.
+Install dependencies in both `server` and `client`:
 
-# Contributors
+```sh
+npm install
+```
 
-Ruby Zhuang: https://github.com/Ruby-Zhuang/
+## Running Server & Client
 
-Dylan Du: https://github.com/dylangit01
+```sh
+npm start
+```
 
-Nelli Butenko: https://github.com/NelliBtn
+## Contributors
+
+Ruby Zhuang: [@Ruby-Zhuang](https://github.com/Ruby-Zhuang/)
+
+Nelli Butenko: [@NelliBtn](https://github.com/NelliBtn)
+
+Dylan Du: [@dylangit01](https://github.com/dylangit01)
