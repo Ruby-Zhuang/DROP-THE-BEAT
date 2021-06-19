@@ -45,9 +45,9 @@ const useStyles = makeStyles((theme) => ({
     padding: 0,
   },
   icon: {
-    background: 'linear-gradient(45deg, #9e66f2 30%, #2162f3 90%)',
+    // background: 'linear-gradient(45deg, #9e66f2 30%, #2162f3 90%)',
     marginRight: theme.spacing(1),
-    // background: 'transparent',
+    background: 'transparent',
   },
   mainHeading: {
     display: 'flex',
@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
     margin: '1vh',
   },
   difficulty: {
-    marginLeft: theme.spacing(6),
+    marginLeft: theme.spacing(7),
   },
   divider: {
     background: 'rgba(255, 255, 255, 0.4)',
@@ -153,7 +153,7 @@ export default function PlaylistPage() {
                 <ListItem >
                   <ListItemText>
                     <Typography variant='h5' className={classes.mainHeading}>
-                      {/* <Avatar className={classes.icon}><TimelapseIcon /></Avatar> */}
+                      <Avatar className={classes.icon}><TimelapseIcon /></Avatar>
                       <span>Difficulty</span>
                     </Typography>
                     <FormControl component='fieldset' className={classes.difficulty}>
@@ -177,7 +177,7 @@ export default function PlaylistPage() {
                   <ListItemText>
                     <div className="songs-section">
                       <Typography variant='h5' className={classes.mainHeading}>
-                        {/* <Avatar className={classes.icon}><QueueMusicIcon /></Avatar> */}
+                        <Avatar className={classes.icon}><QueueMusicIcon /></Avatar>
                         <span>Songs</span>
                       </Typography>
                       <IconButton aria-label='more' aria-controls='long-menu' aria-haspopup='true' onClick={handleSongsClick}>
@@ -214,7 +214,7 @@ export default function PlaylistPage() {
                 <ListItem >
                   <ListItemText>
                     <Typography variant='h5' className={classes.mainHeading}>
-                      {/* <Avatar className={classes.icon}><LinkIcon /></Avatar> */}
+                      <Avatar className={classes.icon}><LinkIcon /></Avatar>
                       <span>Game Code</span>
                     </Typography>
                     <div className='game-code-section'>

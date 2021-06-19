@@ -41,9 +41,9 @@ const useStyles = makeStyles((theme) => ({
     padding: 0,
   },
   icon: {
-    background: 'linear-gradient(45deg, #9e66f2 30%, #2162f3 90%)',
+    // background: 'linear-gradient(45deg, #9e66f2 30%, #2162f3 90%)',
     marginRight: theme.spacing(1),
-    // background: 'transparent',
+    background: 'transparent',
   },
   mainHeading: {
     display: 'flex',
@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
     margin: '1vh',
   },
   difficulty: {
-    marginLeft: theme.spacing(6),
+    marginLeft: theme.spacing(7),
   },
   divider: {
     background: 'rgba(255, 255, 255, 0.4)',
@@ -59,7 +59,7 @@ const useStyles = makeStyles((theme) => ({
   nameChange: {
     borderRadius: '16px',
     background: 'rgba(255, 255, 255, 0.8)',
-    marginLeft: theme.spacing(6),
+    marginLeft: theme.spacing(7),
     paddingLeft: theme.spacing(1),
     fontSize: theme.spacing(2),
     width: "55%",
@@ -77,10 +77,10 @@ const useStyles = makeStyles((theme) => ({
     color: "white",
   },
   listItem: {
-    marginLeft: theme.spacing(6),
+    marginLeft: theme.spacing(7),
   },
   players: {
-    marginLeft: theme.spacing(5.5),
+    marginLeft: theme.spacing(6),
   },
   overlay: {
     position: 'absolute',
@@ -130,7 +130,7 @@ export default function Lobby({ playlist, sendMessage, songs, numberOfSongs, use
               <ListItem >
                 <ListItemText>
                   <Typography variant='h5' className={classes.mainHeading}>
-                    {/* <Avatar className={classes.icon}><TimelapseIcon /></Avatar> */}
+                    <Avatar className={classes.icon}><TimelapseIcon /></Avatar>
                     <span>Difficulty</span>
                   </Typography>
                   <FormControl component='fieldset' className={classes.difficulty}>
@@ -151,7 +151,7 @@ export default function Lobby({ playlist, sendMessage, songs, numberOfSongs, use
                 <ListItemText>
                   <div className="songs-section">
                     <Typography variant='h5' className={classes.mainHeading}>
-                      {/* <Avatar className={classes.icon}><QueueMusicIcon /></Avatar> */}
+                      <Avatar className={classes.icon}><QueueMusicIcon /></Avatar>
                       <span>Songs</span>
                     </Typography>
                     <Typography variant='subtitle1' className={classes.listItem}>Number of Songs: {numberOfSongs}</Typography>
@@ -164,7 +164,7 @@ export default function Lobby({ playlist, sendMessage, songs, numberOfSongs, use
               <ListItem >
                 <ListItemText>
                   <Typography variant='h5' className={classes.mainHeading}>
-                    {/* <Avatar className={classes.icon}><PersonIcon /></Avatar> */}
+                    <Avatar className={classes.icon}><PersonIcon /></Avatar>
                     <span>Host</span>
                   </Typography>
                   <Typography variant='subtitle1' className={classes.listItem}>
@@ -179,7 +179,7 @@ export default function Lobby({ playlist, sendMessage, songs, numberOfSongs, use
               <ListItem >
                 <ListItemText>
                   <Typography variant='h5' className={classes.mainHeading}>
-                    {/* <Avatar className={classes.icon}><GroupAddIcon /></Avatar> */}
+                    <Avatar className={classes.icon}><GroupAddIcon /></Avatar>
                     <span>Players</span>
                   </Typography>
                   {/* List of Players */}
