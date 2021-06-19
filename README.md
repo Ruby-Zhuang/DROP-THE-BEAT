@@ -29,20 +29,20 @@ Players can chat and guess the song title (short audio clip of songs plays each 
 
 ## Functional Behaviour/Features
 
-Host can:
+**Host can:**
 
 - Select a playlist
 - Invite players to guess the songs in that playlist just by listening to a short clip of the tunes
 - Control the gameflow by clicking "next song" at any moment
 - Cheer on players or give them hints in the live chat
 
-Players can:
+**Players can:**
 
 - Change their name upon arrival into the game lobby
 - Compete with other players by typing the correct song title (case insensitive) in the live chat
 - Get a point if they are the first to correctly guess the song
 
-Game Features:
+**Game Features:**
 
 - Song details (title, artist, album photo) are revealed each round as soon as the title is guessed or when the time runs out (30 seconds default)
 - Song details are available upon hover if they have been previously played
